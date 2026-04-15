@@ -79,7 +79,7 @@ export default function Footer(): React.JSX.Element {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10 py-6 text-center text-white/50 text-sm">
-        © {new Date().getFullYear()} bftconsultants. All rights reserved.
+        © {new Date().getFullYear()} futureaxis. All rights reserved.
       </div>
     </footer>
   );
