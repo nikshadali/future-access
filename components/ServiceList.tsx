@@ -72,11 +72,11 @@ export default function ServiceList({
             <button
               key={tab.label}
               onClick={() => setActiveIndex(index)}
-              className={`text-left bg-[#032841] cursor-pointer text-[22px] py-5 px-9.5 rounded-xl font-semibold transition-all duration-300
+              className={`text-left bg-primary cursor-pointer text-[22px] py-5 px-9.5 rounded-xl font-semibold transition-all duration-300
                 ${
                   isActive
-                    ? "bg-[#032841] text-white"
-                    : "text-white  hover:bg-[#032841]/80"
+                    ? "bg-primary text-foreground"
+                    : "text-foreground  hover:bg-primary/80"
                 }
               `}
             >
@@ -89,17 +89,17 @@ export default function ServiceList({
 
       {/* Center Card */}
       <div className="md:w-1/3" ref={contentRef}>
-        <div className="bg-[#032841] p-8 rounded-2xl shadow-lg min-h-125 flex flex-col justify-between">
+        <div className="bg-primary p-8 rounded-2xl shadow-lg min-h-125 flex flex-col justify-between">
           
           <div>
             {activeTab.icon && (
-              <div className="text-[#0196f4] text-[80px] mb-4">
+              <div className="text-foreground text-[80px] mb-4">
                 {activeTab.icon}
               </div>
             )}
 
-            <p className="text-gray-300 leading-relaxed text-[18px]">
-              <span className="font-semibold text-white">
+            <p className="text-foreground/60 leading-relaxed text-[18px]">
+              <span className="font-semibold text-foreground">
                 {activeTab.heading}
               </span>{" "}
               {activeTab.description}
@@ -108,7 +108,7 @@ export default function ServiceList({
 
           <ul className="text-[16px] font-semibold text-white mt-6 space-y-2">
             {activeTab.points.map((point, i) => (
-              <li key={i} className="before:content-['✦'] before:mr-2 before:text-[#0196f4]">
+              <li key={i} className="before:content-['✦'] before:mr-2 before:text-foreground/80">
                 {point}
               </li>
             ))}

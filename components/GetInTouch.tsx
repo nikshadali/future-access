@@ -19,7 +19,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const inputStyle =
-  "w-full border border-[#0196f4]/20 rounded-xl px-4 py-3  placeholder:text-gray-400 focus:outline-none focus:border-[#0196f4] transition";
+  "w-full border border-primary/50 rounded-xl px-4 py-3  placeholder:text-gray-400 focus:outline-none focus:border-[#0196f4] transition";
 export const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),
   email: z.string().email("Invalid email"),
@@ -87,7 +87,7 @@ const onSubmit = async (data: ContactFormData) => {
       className=" py-24 relative overflow-hidden"
     >
       {/* Accent Glow */}
-      <div className="absolute inset-0 bg-[#0196f4]/5 blur-3xl opacity-30 pointer-events-none" />
+      <div className="absolute inset-0 bg-primary/5 blur-3xl opacity-30 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 relative z-10">
 
@@ -110,7 +110,7 @@ const onSubmit = async (data: ContactFormData) => {
         </div>
 
         {/* Right Side Form */}
-        <div className="contact-animate p-10 rounded-md border border-[#0196f4]/20 shadow-xl">
+        <div className="contact-animate p-10 rounded-md border border-primary/50 shadow-xl">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
 
   {/* Name */}
@@ -188,16 +188,16 @@ function ContactItem({
   name: string
 }) {
   return (
-    <Card className="group bg-[#021f33] border border-[#0196f4]/20 transition-all duration-300 hover:-translate-y-1 hover:border-[#0196f4] hover:shadow-lg">
+    <Card className="group bg-primary border border-primary/20 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-lg">
       <CardContent className="flex items-center gap-4 px-5 py-2">
         
         {/* Icon */}
-        <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#032940] text-[#0196f4] group-hover:bg-[#0196f4] group-hover:text-black transition-all duration-300">
+        <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-background text-foreground group-hover:bg-foreground group-hover:text-background transition-all duration-300">
           {icon}
         </div>
 
         {/* Text */}
-        <div className="text-white/80 font-semibold group-hover:text-white transition-colors duration-300">
+        <div className="text-foreground/80 font-semibold group-hover:text-foreground transition-colors duration-300">
           {name}
           <p className="text-sm font-normal">{text}</p>
         </div>

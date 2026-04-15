@@ -7,6 +7,8 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { AnimatedThemeToggler } from "./ui/animated-theme-toggler"
+
 
 export function Navbar() {
   const navRef = useRef<HTMLDivElement>(null)
@@ -105,7 +107,13 @@ useEffect(() => {
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-primary tracking-tight">
-         <Image src="/fbt-logo.png" alt="Logo" width={60} height={50} />
+         <Image 
+         src="/future-axis-logo.png"
+          alt="Logo" 
+          width={200} 
+          height={60} 
+          priority
+           />
         </Link>
 
         {/* Desktop Menu */}
@@ -116,7 +124,8 @@ useEffect(() => {
 </nav>
 
         {/* CTA */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-4">
+          <AnimatedThemeToggler />
           <Button>Get Started</Button>
         </div>
 
@@ -146,6 +155,7 @@ useEffect(() => {
           <Link href="/services">Services</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+          
           <Button className="mt-4 w-full">Get Started</Button>
         </div>
       </div>

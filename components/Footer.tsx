@@ -7,10 +7,10 @@ import Image from "next/image";
 
 export default function Footer(): React.JSX.Element {
   return (
-    <footer className="bg-[#021f33] text-white relative overflow-hidden">
+    <footer className=" bg-background text-foreground relative overflow-hidden">
       
       {/* Top Accent Line */}
-      <div className="absolute top-0 left-0 w-full h-[2px] bg-[#0196f4]" />
+      <div className="absolute top-0 left-0 w-full h-0.5 bg-primary" />
 
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-4 gap-12">
 
@@ -19,7 +19,7 @@ export default function Footer(): React.JSX.Element {
           {/* <h2 className="text-3xl font-bold">
             YourCompany<span className="text-[#0196f4]">.</span>
           </h2> */}
-          <Image src="/fbt-logo.png" alt="Logo" width={100} height={100} />
+          <Image src="/future-axis-logo.png" alt="Logo" width={200} height={100} />
           <p className="text-white/60 leading-relaxed">
             Empowering industries with AI-powered ERP, accounting,
             and intelligent digital transformation solutions.
@@ -67,7 +67,7 @@ export default function Footer(): React.JSX.Element {
             <input
               type="email"
               placeholder="Your email address"
-              className="w-full bg-[#032940] border border-[#0196f4]/30 rounded-full px-5 py-3 pr-14 text-white placeholder:text-white/40 focus:outline-none focus:border-[#0196f4] transition"
+              className="w-full bg-primary/70 border border-primary rounded-full px-5 py-3 pr-14 text-white placeholder:text-white/40 focus:outline-none focus:border-[#0196f4] transition"
             />
             <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#0196f4] p-2 rounded-full hover:scale-105 transition">
               <Mail size={18} />
@@ -114,7 +114,7 @@ function FooterColumn({
 
 function SocialIcon({ icon }: { icon: React.ReactNode }) {
   return (
-    <div className="w-10 h-10 rounded-full bg-[#032940] border border-[#0196f4]/20 flex items-center justify-center cursor-pointer hover:bg-[#0196f4] hover:text-black transition duration-300">
+    <div className="w-10 h-10 rounded-full bg-primary border border-primary/20 flex items-center justify-center cursor-pointer hover:bg-primary hover:text-black transition duration-300">
       {icon}
     </div>
   );

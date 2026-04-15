@@ -5,7 +5,7 @@ import ScrollHighlightTitle from "../ui/ScrollHighlightTitle"
 
 export default function IndustriesSection({ industries }: any) {
   return (
-    <section className="py-20 px-6 bg-slate-100">
+    <section className="py-20 px-6 bg-background">
  <div className="mb-10 text-center">
             <ScrollHighlightTitle text={industries?.title} />
           </div>
@@ -16,7 +16,7 @@ export default function IndustriesSection({ industries }: any) {
           {industries?.industriesArr.map((industry: string) => (
             <span
               key={industry}
-              className="px-5 py-2 border rounded-full bg-white text-sm"
+              className="px-5 py-2 border rounded-full bg-foreground text-sm"
             >
               {industry}
             </span>

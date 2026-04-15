@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:is(.light *));
 
 @theme inline {
   --color-background: var(--background);
@@ -67,49 +67,69 @@
 
 :root {
   /* Base */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #ffffff;
+  --foreground: #010101;
 
-  /* Brand Colors */
-  --primary: #012a3d;
+  /* Brand (Aligned with Logo) */
+  --primary: #0a7cca;
   --primary-foreground: #ffffff;
 
-  --accent: #0196f4;
+  /* Accent (slightly brighter for interaction) */
+  --accent: #0a7cca;
   --accent-foreground: #ffffff;
+  --accent-color: #0a7cca;
 
-  /* Soft System */
-  --secondary: oklch(0.96 0 0);
-  --secondary-foreground: #012a3d;
+  --text-highlight-active: var(--foreground);
+  --text-highlight-base: #9ca3af; /* gray-400 */
 
-  --muted: oklch(0.97 0 0);
+  /* Neutral System */
+  --secondary: #e9eef2;
+  --secondary-foreground: #010101;
+
+  --muted: #eef3f6;
   --muted-foreground: #6b7280;
 
-  --border: #e5e7eb;
-  --input: #e5e7eb;
-  --ring: #0196f4;
+  --border: #dce3e8;
+  --input: #dce3e8;
+  --ring: #0a7cca;
 
-  --radius: 0.75rem;
+  /* Cards / Surfaces */
+  --card: #ffffff;
+  --card-foreground: #010101;
 
-   --font-heading: 'Inter', sans-serif;
+  /* Radius (more premium feel) */
+  --radius: 0.875rem;
+
+  /* Typography */
+  --font-heading: 'Inter', sans-serif;
   --font-body: 'Poppins', sans-serif;
+  --shadow-primary: 30 145 202; /* rgb for #1e91ca */
+
+   --glow-primary: 30 145 202;   /* #1e91ca */
+  --glow-accent: 58 167 222;    /* #3aa7de */
 }
-
 .dark {
-  --background: #012a3d;
-  --foreground: #ffffff;
+  --background: #010101;
+  --foreground: #f1f1f1;
 
-  --card: #062f45;
-  --card-foreground: #ffffff;
+  --card: #0a0a0a;
+  --card-foreground: #f1f1f1;
 
-  --primary: #0196f4;
+  --primary: #0a7cca;
   --primary-foreground: #ffffff;
 
-  --accent: #0196f4;
+  --text-highlight-active: #ffffff;
+  --text-highlight-base: #6b7280; /* gray-500 */
+
+  --accent: #0a7cca;
   --accent-foreground: #ffffff;
 
-  --border: rgba(255,255,255,0.1);
-  --input: rgba(255,255,255,0.1);
-  --ring: #0196f4;
+  --border: rgba(255,255,255,0.08);
+  --input: rgba(255,255,255,0.08);
+  --ring: #0a7cca;
+   --shadow-primary: 30 145 202; 
+   --glow-primary: 30 145 202;
+  --glow-accent: 58 167 222;
 }
 .img-slider-single::after {
   content: "";
@@ -226,7 +246,6 @@ ol {
 .step-list::after {
   content: counter(cardnr, decimal-leading-zero);
   position: absolute;
- 
 
   left: calc(var(--inlineP) * -1);
   right: calc(var(--inlineP) * -1);
@@ -270,4 +289,8 @@ ol {
 .step-list .descr {
   position: relative;
   z-index: 1;
+}
+::view-transition-old(root), ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
 }

@@ -100,8 +100,7 @@ const tabs = [
   },
 ];
 const Services = () => {
-  console.log(Section)
-console.log(Section?.Title)
+
   return (
     <Container>
       

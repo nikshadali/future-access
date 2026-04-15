@@ -7,8 +7,11 @@ import GetInTouch from "@/components/GetInTouch";
 import IndustriesSectionMain from "@/components/IndustriesSectionMain";
 import Services from "@/components/Services";
 import IndustriesSection from "@/components/services/IndustriesSection";
+import Hero from "@/components/Hero";
+import { GrowConfidanceSection } from "@/components/GrowConfidanceSection";
 
 export const metadata: Metadata = {
+   metadataBase: new URL("https://yourdomain.com"), 
   title: "AI ERP & Business Solutions | Accounting, CFO, Automation",
   description:
     "AI-driven ERP, accounting, CFO, and automation solutions to streamline operations, improve financial control, and scale your business.",
@@ -83,11 +86,11 @@ export default function Page() {
       />
 
       {/* Page Components */}
-      <ExpandableCards />
+      <Hero />
       <Services />
       <IndustriesSectionMain />
       <IndustriesSection industries={industries} />
-      <FunFacts />
+      <GrowConfidanceSection/>
       <GetInTouch />
       <Footer />
     </>
