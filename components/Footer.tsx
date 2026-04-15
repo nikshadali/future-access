@@ -4,11 +4,12 @@ import React from "react";
 import Link from "next/link";
 import { Mail, Linkedin, Twitter, Github } from "lucide-react";
 import Image from "next/image";
+import { AnimatedGlow } from "./AnimatedGlow";
 
 export default function Footer(): React.JSX.Element {
   return (
     <footer className=" bg-background text-foreground relative overflow-hidden">
-      
+      <AnimatedGlow/>
       {/* Top Accent Line */}
       <div className="absolute top-0 left-0 w-full h-0.5 bg-primary" />
 
