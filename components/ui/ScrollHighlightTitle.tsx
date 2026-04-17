@@ -211,11 +211,11 @@ export default function ScrollHighlightTitle({
   );
 
   return (
-    <h1
+    <h2
       ref={titleRef}
       className={`text-[2.5rem] md:text-6xl font-extrabold leading-none ${className}`}
     >
       {text}
-    </h1>
+    </h2>
   );
 }

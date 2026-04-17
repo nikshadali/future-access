@@ -47,6 +47,16 @@
   --radius-4xl: calc(var(--radius) + 16px);
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+ --spacing-xs: var(--space-xs);
+  --spacing-sm: var(--space-sm);
+  --spacing-md: var(--space-md);
+  --spacing-lg: var(--space-lg);
+  --spacing-xl: var(--space-xl);
+
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+
   @keyframes marquee {
   from {
     transform: translateX(0);
@@ -107,6 +117,28 @@
 
    --glow-primary: 30 145 202;   /* #1e91ca */
   --glow-accent: 58 167 222;    /* #3aa7de */
+
+   /* Typography Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Layout */
+  --section-padding-y: 5rem;
+  --section-padding-x: 6%;
+  --container-max: 1200px;
 }
 .dark {
   --background: #010101;
@@ -130,6 +162,36 @@
    --shadow-primary: 30 145 202; 
    --glow-primary: 30 145 202;
   --glow-accent: 58 167 222;
+
+  /* Typography */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --shadow-primary: 30 145 202; /* rgb for #1e91ca */
+
+   --glow-primary: 30 145 202;   /* #1e91ca */
+  --glow-accent: 58 167 222;    /* #3aa7de */
+
+   /* Typography Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Layout */
+  --section-padding-y: 5rem;
+  --section-padding-x: 6%;
+  --container-max: 1200px;
 }
 .img-slider-single::after {
   content: "";
@@ -161,6 +223,32 @@ h1, h2, h3, h4, h5, h6 {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .section {
+    padding: var(--section-padding-y) var(--section-padding-x);
+  }
+
+  .section-title {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+  }
+
+  .section-description {
+    font-size: var(--text-md);
+    color: var(--muted-foreground);
+  }
+
+  .card-base {
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+  }
+
+  .card-base:hover {
+    transform: translateY(-4px);
   }
 }
 ol {

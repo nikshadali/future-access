@@ -1,12 +1,18 @@
-'use client'
+"use client";
 
-import { Container } from './Container'
-import ScrollHighlightTitle from './ui/ScrollHighlightTitle'
-import ServiceList from './ServiceList'
-import { BookOpen, Briefcase, Code2, Cpu, DollarSign, MessageSquare, Palette, PenTool, Rocket, ShoppingBag, TrendingUp } from 'lucide-react'
-import { TextEffectWithExit } from './ui/TextEffectWithExit'
-import Section from './ui/section'
-import { url } from 'inspector'
+import ScrollHighlightTitle from "./ui/ScrollHighlightTitle";
+import ServiceList from "./ServiceList";
+import {
+  BookOpen,
+  Briefcase,
+  Cpu,
+  DollarSign,
+  MessageSquare,
+  TrendingUp,
+} from "lucide-react";
+import { TextEffectWithExit } from "./ui/TextEffectWithExit";
+import Section from "./ui/section";
+import { Container } from "./Container";
 const tabs = [
   {
     label: "Business Growth Services",
@@ -21,7 +27,7 @@ const tabs = [
     ],
     image: "/list-01.png",
     icon: <TrendingUp size={40} />,
-    url: "/services"
+    url: "/services",
   },
   {
     label: "Finance Services",
@@ -36,7 +42,7 @@ const tabs = [
     ],
     image: "/list-02.png",
     icon: <DollarSign size={40} />,
-    url: "/services"
+    url: "/services",
   },
   {
     label: "Technology Solutions",
@@ -51,7 +57,7 @@ const tabs = [
     ],
     image: "/list-03.png",
     icon: <Cpu size={40} />,
-    url: "/services"
+    url: "/services",
   },
   {
     label: "Business Setup",
@@ -66,7 +72,7 @@ const tabs = [
     ],
     image: "/list-04.png",
     icon: <Briefcase size={40} />,
-    url: "/services/business-setup"
+    url: "/services/business-setup",
   },
   {
     label: "Bookkeeping",
@@ -81,7 +87,7 @@ const tabs = [
     ],
     image: "/list-05.png",
     icon: <BookOpen size={40} />,
-    url: "/services/bookkeeping"
+    url: "/services/bookkeeping",
   },
   {
     label: "WhatsApp Automation",
@@ -96,29 +102,27 @@ const tabs = [
     ],
     image: "/list-06.png",
     icon: <MessageSquare size={40} />,
-    url: "/services/whatsapp-automation"
+    url: "/services/whatsapp-automation",
   },
 ];
 const Services = () => {
-
   return (
     <Container>
-      
-<Section>
-  <Section.Title>
-    <ScrollHighlightTitle text="We are offering the best solutions" />
-  </Section.Title>
-
-  <Section.Description>
-    <TextEffectWithExit>
-       We deliver cutting edge, AI powered solutions designed to streamline operations,
-  boost efficiency, and accelerate your business growth in a competitive digital world.
-    </TextEffectWithExit>
-  </Section.Description>
-</Section>
-<ServiceList  tabs={tabs}/>
+      <Section>
+        <Section.Title>
+          <ScrollHighlightTitle text="We are offering the best solutions" />
+        </Section.Title>
+        <Section.Description>
+          <TextEffectWithExit>
+            We deliver cutting edge, AI powered solutions designed to streamline
+            operations, boost efficiency, and accelerate your business growth in
+            a competitive digital world.
+          </TextEffectWithExit>
+        </Section.Description>
+      </Section>
+      <ServiceList tabs={tabs} />
     </Container>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

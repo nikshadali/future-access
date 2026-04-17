@@ -5,7 +5,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Mail, Phone, MapPin } from "lucide-react";
-import AnimatedButton from "./ui/AnimatedButton";
 import ScrollHighlightTitle from "./ui/ScrollHighlightTitle";
 import { Container } from "./Container";
 import { Card, CardContent } from "./ui/card";
@@ -13,6 +12,7 @@ import { TextEffectWithExit } from "./ui/TextEffectWithExit";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { AnimatedButton } from "./FinanceButton";
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -93,9 +93,7 @@ const onSubmit = async (data: ContactFormData) => {
 
         {/* Left Side */}
         <div className="contact-animate space-y-6">
-          {/* <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            Let’s Build Something <span className="text-[#0196f4]">Powerful</span>
-          </h2> */}
+          
  <ScrollHighlightTitle text="Let’s Build Something Powerful" />
          
 <TextEffectWithExit>
@@ -165,7 +163,6 @@ const onSubmit = async (data: ContactFormData) => {
 
   {/* Submit */}
   <AnimatedButton
-    isDarkblue={true}
     label={isSubmitting ? "Sending..." : "Send Message"}
     type="submit"
   />
@@ -188,7 +185,7 @@ function ContactItem({
   name: string
 }) {
   return (
-    <Card className="group bg-primary border border-primary/20 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-lg">
+    <Card className="group bg-card border border-foreground/20 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-lg">
       <CardContent className="flex items-center gap-4 px-5 py-2">
         
         {/* Icon */}

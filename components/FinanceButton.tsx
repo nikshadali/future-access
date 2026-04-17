@@ -38,11 +38,13 @@ import { ArrowUpRight } from "lucide-react";
 type AnimatedButtonProps = {
   label: string;
   className?: string;
+  type?: "button" | "submit" | "reset";
 };
 
 export function AnimatedButton({
   label,
   className,
+  type = "button",
 }: AnimatedButtonProps) {
   return (
     <button
@@ -50,6 +52,7 @@ export function AnimatedButton({
         "group relative inline-flex h-12 items-center justify-center gap-3 overflow-hidden rounded-full border border-primary bg-primary hover:border-background px-5 text-sm font-medium text-primary-foreground transition-all duration-500 hover:shadow-[0_10px_30px_rgba(var(--shadow-primary),0.25)] hover:bg-background dark:border-transparent dark:hover:border-primary/30",
         className
       )}
+      type={type}
     >
       {/* Expanding Background */}
       <span className="absolute right-4 z-0 h-6 w-6 rounded-full bg-background transition-transform  duration-700 ease-out group-hover:scale-[18]" />
