@@ -12,6 +12,8 @@ import { AnimatedGlow } from '@/components/AnimatedGlow';
 import CustomBadge from '@/components/CustomBadge';
 import { AnimatedButton } from '@/components/FinanceButton';
 import CTASection from '@/components/CTASection';
+import Hero from '@/components/Hero';
+import { Section } from '@/layout/Section';
 
 const stats = [
   { label: "Projects Completed", value: "250+" },
@@ -60,24 +62,26 @@ const AboutPageClient = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative py-32 px-6 text-center">
-        <Particles className="absolute inset-0 z-0" quantity={100} ease={80} color="#000000" refresh />
-      <AnimatedGlow/>
-      <CustomBadge title="About Us" />
-       
-        <h1 className="mt-4 text-4xl md:text-6xl max-w-4xl mx-auto font-extrabold">
-          We Build Modern Solutions for Growing Businesses
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-          From startups to enterprises, we deliver technology and business solutions that scale and innovate.
-        </p>
-      </section>
-
+     
+        <Hero
+          badge="About Us"
+          title="We Build Modern Solutions for "
+          highlight="Growing Businesses"
+          description="From startups to enterprises, we deliver technology and business solutions that scale and innovate."
+          primaryAction="Get Free Consultation"
+          secondaryAction="View Services"
+          stats={[
+            { value: "500+", label: "Businesses Supported" },
+            { value: "10+", label: "Industries Served" },
+            { value: "98%", label: "Client Satisfaction" },
+          ]}
+          
+        />
       {/* Stats Section */}
-      <SocialProofSection isBgGray={true} />
+     
 
       {/* Our Values */}
-      <section className="py-20 max-w-6xl mx-auto">
+      <Section >
         <ScrollHighlightTitle text="Our Core Values" />
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           {values.map((value, i) => (
@@ -90,18 +94,7 @@ const AboutPageClient = () => {
             </Card>
           ))}
         </div>
-      </section>
-
-      {/* Mission Section */}
-      {/* <section className="py-32 px-6 bg-background text-white text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold">Our Mission</h2>
-        <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl">
-          Empower businesses with modern technology, seamless processes, and data-driven solutions.
-        </p>
-        <div className="flex justify-center mt-10">
-          <AnimatedButton label="Get in Touch" />
-        </div>
-      </section> */}
+      </Section>
 
        <CTASection
     title="Our Mission"

@@ -19,7 +19,7 @@ export function Section({ children, className, variant = "default", id }: Props)
     <section
       id={id}
       className={cn(
-        "py-16 sm:py-20 lg:py-28 px-6 md:px-[8%] bg-background/40",
+        "py-12 sm:py-16 lg:py-24 px-6 md:px-[8%] bg-background/40",
         variantStyles[variant],
         className
       )}

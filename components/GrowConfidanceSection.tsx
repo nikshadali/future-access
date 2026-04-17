@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import { motion, useInView } from "framer-motion";
 import { fadeUp, viewportConfig } from "@/lib/motion-variants";
 import { useEffect, useRef, useState, useCallback } from "react";

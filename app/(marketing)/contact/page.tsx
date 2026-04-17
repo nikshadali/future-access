@@ -13,25 +13,26 @@
 // export default ContactPage
 import GetInTouch from "@/components/GetInTouch";
 import CTASection from "@/components/CTASection";
+import Hero from "@/components/Hero";
+import { Section } from "@/layout/Section";
 
 export default function ContactPage() {
   return (
     <div className="flex flex-col">
-
-      {/* 1. HERO */}
-      <section className="py-20 text-center max-w-3xl mx-auto px-6">
-        <h1 className="text-4xl md:text-5xl font-semibold">
-          Let’s Talk About Your Business
-        </h1>
-        <p className="mt-4 text-muted-foreground text-lg">
-          Whether you're starting, scaling, or optimizing — our experts are here to help.
-        </p>
-
-        {/* Trust badge */}
-        <p className="mt-4 text-sm text-muted-foreground">
-          🔒 100% confidential • No commitment required
-        </p>
-      </section>
+      <Hero
+        badge="Free Consultation"
+        title="Let’s Talk About"
+        highlight="Your Business"
+        description="Whether you're starting, scaling, or optimizing — our experts"
+        primaryAction="Get Free Consultation"
+        secondaryAction="View Services"
+        stats={[
+          { value: "500+", label: "Businesses Supported" },
+          { value: "10+", label: "Industries Served" },
+          { value: "98%", label: "Client Satisfaction" },
+        ]}
+       
+      />
 
       {/* 2. FORM */}
       <GetInTouch />
@@ -39,14 +40,14 @@ export default function ContactPage() {
      
 
       {/* 4. TRUST SECTION */}
-      <section className="py-16 text-center">
+      <Section className="text-center" >
         <h2 className="text-2xl font-semibold">
           Trusted by Growing Businesses
         </h2>
         <p className="text-muted-foreground mt-2">
           Helping startups and enterprises streamline operations and scale faster.
         </p>
-      </section>
+      </Section>
 
       
 

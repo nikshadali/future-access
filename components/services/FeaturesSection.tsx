@@ -2,13 +2,15 @@
 
 import { CheckCircle } from "lucide-react"
 import ScrollHighlightTitle from "../ui/ScrollHighlightTitle"
+import { Section } from "@/layout/Section"
+import { Heading } from "../typography/Heading"
 
 export default function FeaturesSection({ features }: any) {
   return (
-    <section className="py-20 px-6">
- <div className="mb-10 text-center">
+    <Section>
+ <Heading>
             <ScrollHighlightTitle text={features?.title} />
-          </div>
+          </Heading>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
 
         {features?.featuresArr?.map((feature: string, i: number) => (
@@ -22,7 +24,7 @@ export default function FeaturesSection({ features }: any) {
 
       </div>
 
-    </section>
+    </Section>
   )
 }
 

@@ -10,6 +10,8 @@ import {
 
 import ScrollHighlightTitle from "../ui/ScrollHighlightTitle";
 import { icons } from "@/lib/icons";
+import { Section } from "@/layout/Section";
+import { Heading } from "../typography/Heading";
 
 // const stepsElement = [
 //   {
@@ -40,10 +42,10 @@ import { icons } from "@/lib/icons";
 
 export default function ProcessSection({ steps }: any) {
   return (
-    <section className="timeline-section bg-background py-10">
-      <div className="mb-10 text-center">
+    <Section>
+      <Heading>
         <ScrollHighlightTitle text={steps?.title} />
-      </div>
+      </Heading>
 
       <ol>
         {steps?.stepsArr?.map((step: any, index: number) => {
@@ -59,11 +61,11 @@ export default function ProcessSection({ steps }: any) {
 
               <div className="title">{step.title}</div>
 
-              <div className="descr">{step.desc}</div>
+              <div className="descr text-black">{step.desc}</div>
             </li>
           );
         })}
       </ol>
-    </section>
+    </Section>
   );
 }
