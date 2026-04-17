@@ -7,7 +7,7 @@ import { AnimatedNumberBasic } from "../AnimatedNumberBasic";
 export default function SocialProofSection({isBgGray= false}: any) {
  
   return (
-    <section className={`py-16 px-6 ${isBgGray && "bg-slate-100"}`}>
+    <section className={`py-16 px-6 bg-background`}>
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           <div>
             <h3 className="text-3xl flex justify-center font-bold">

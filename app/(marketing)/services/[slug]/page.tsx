@@ -12,6 +12,7 @@ import CTASection from "@/components/services/CTASection"
 import { TechStackSection } from "@/components/services/TechStackSection"
 import { IntegrationsSection } from "@/components/services/IntegrationsSection"
 import { UseCasesSection } from "@/components/services/UseCasesSection"
+import ServiceCTASection from "@/components/services/CTASection"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -27,15 +28,15 @@ export default async function ServicePage({ params }: Props) {
   if (!service) return notFound()
 
   return (
-    <div className="mt-16">
+    <div >
 
       {service.sections.includes("hero") && (
         <HeroSection service={service} />
       )}
 
-      {service.sections.includes("socialProof") && (
+      {/* {service.sections.includes("socialProof") && (
         <SocialProofSection />
-      )}
+      )} */}
 
       {service.sections.includes("services") && service.services && (
         <ServicesGridSection services={service.services} />
@@ -74,7 +75,7 @@ export default async function ServicePage({ params }: Props) {
 )}
 
       {service.sections.includes("cta") && (
-        <CTASection />
+        <ServiceCTASection />
       )}
 
     </div>

@@ -98,7 +98,7 @@ export function GrowConfidanceSection() {
                   : ""
               }`}
             >
-              <div className="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-3">
+              <div className="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-forground mb-3">
                 <AnimatedNumber value={stat.value} suffix={stat.suffix} />
               </div>
               <p className="text-white/50 text-sm font-medium uppercase tracking-wider">

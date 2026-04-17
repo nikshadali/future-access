@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+
 import {
   Briefcase,
   LineChart,
@@ -16,10 +16,11 @@ import Link from "next/link";
 import Section from "@/components/ui/section";
 import ScrollHighlightTitle from "@/components/ui/ScrollHighlightTitle";
 import { TextEffectWithExit } from "@/components/ui/TextEffectWithExit";
-import AnimatedButton from "@/components/ui/AnimatedButton";
-import { Badge } from "@/components/ui/badge";
 import { Particles } from "@/components/ui/particles";
-import Footer from "@/components/Footer";
+import CustomBadge from "@/components/CustomBadge";
+import { AnimatedButton } from "@/components/FinanceButton";
+import Hero from "@/components/Hero";
+import CTASection from "@/components/CTASection";
 
 export default function ServicesPage() {
   const businessServices = [
@@ -105,7 +106,7 @@ export default function ServicesPage() {
     <div className="bg-background">
       {/* HERO */}
 
-      <section className="max-w-7xl relative mx-auto px-6 py-24 text-center">
+      {/* <section className="max-w-7xl relative mx-auto px-6 py-24 text-center">
         <Particles
           className="absolute inset-0 z-0"
           quantity={100}
@@ -113,7 +114,8 @@ export default function ServicesPage() {
           color="#000000"
           refresh
         />
-        <Badge>Our Services</Badge>
+        <CustomBadge title ="Our Services"/>
+       
         <h1 className="text-4xl md:text-6xl leading-15 max-w-4xl mx-auto font-extrabold">
           Empowering Businesses with Strategy, Finance & Technology
         </h1>
@@ -124,18 +126,33 @@ export default function ServicesPage() {
         </p>
 
         <div className="mt-8 flex justify-center gap-4">
-          {/* <Button size="lg">Get Free Consultation</Button> */}
+         
           <Link href="/contact">
           <AnimatedButton label="Get Free Consultation" />
           </Link>
           <Link href="/services/business-setup">
-          <AnimatedButton label="Explore Services" isDarkblue={true} />
+          <AnimatedButton label="Explore Services"  />
           </Link>
-          {/* <Button size="lg" variant="outline">
-            Explore Services
-          </Button> */}
+         
         </div>
-      </section>
+      </section> */}
+
+       <Hero
+        badge="Business & Financial Consulting"
+        title="Empowering Businesses with Strategy"
+        highlight="Finance & Technology"
+        description="From business setup to AI automation, we provide the expertise and
+          technology solutions to help your company scale faster and operate
+          smarter."
+        primaryAction="Get Free Consultation"
+        secondaryAction="Explore Services"
+        // stats={[
+        //   { value: "500+", label: "Businesses Supported" },
+        //   { value: "10+", label: "Industries Served" },
+        //   { value: "98%", label: "Client Satisfaction" },
+        // ]}
+        
+      />
 
       {/* BUSINESS SERVICES */}
 
@@ -289,7 +306,7 @@ export default function ServicesPage() {
 
       {/* PROCESS */}
 
-      <section className="bg-slate-100 py-20">
+      <section className="bg-background py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Our Process</h2>
@@ -322,7 +339,7 @@ export default function ServicesPage() {
 
       {/* CTA */}
 
-      <section className="py-24 text-center bg-primary text-primary-foreground">
+      {/* <section className="py-24 text-center bg-primary text-primary-foreground">
         <h2 className="text-3xl font-bold">Ready to Grow Your Business?</h2>
 
         <p className="mt-4 max-w-xl mx-auto opacity-90">
@@ -334,10 +351,16 @@ export default function ServicesPage() {
           <Link href="/contact">
           <AnimatedButton label=" Schedule Consultation" />
           </Link>
-          {/* <AnimatedButton label=" Contact Us" /> */}
+          
         </div>
-      </section>
-      <Footer/>
+      </section> */}
+      <CTASection
+              title="Ready to Grow Your Business?"
+              description="Let our experts handle your business, finance, and technology
+          challenges while you focus on growth."
+              primaryAction="Schedule Consultation"
+              trustPoints={["Free consultation", "No obligation", "Fast response"]}
+            />
     </div>
   );
 }

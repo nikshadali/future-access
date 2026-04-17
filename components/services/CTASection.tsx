@@ -1,9 +1,11 @@
 "use client";
-import AnimatedButton from "../ui/AnimatedButton";
+import CTASection from "../CTASection";
 
-export default function CTASection() {
+
+export default function ServiceCTASection() {
   return (
-    <section className="py-20 px-6 bg-primary text-white text-center">
+    <>
+    {/* <section className="py-20 px-6 bg-primary text-white text-center">
       <div className="max-w-3xl mx-auto space-y-6">
         <h2 className="text-3xl font-bold">Ready to Launch Your Business?</h2>
 
@@ -15,6 +17,14 @@ export default function CTASection() {
         <AnimatedButton label="  Book Free Consultation" />
         </div>
       </div>
-    </section>
+    </section> */}
+    <CTASection
+                  title="Ready to Launch Your Business?"
+                  description=" Let our experts handle the legal process while you focus on growing
+          your business."
+                  primaryAction="Book Free Consultation"
+                  trustPoints={["Free consultation", "No obligation", "Fast response"]}
+                />
+</>
   );
 }

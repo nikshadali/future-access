@@ -40,7 +40,7 @@ import { icons } from "@/lib/icons";
 
 export default function ProcessSection({ steps }: any) {
   return (
-    <section className="timeline-section bg-slate-100 py-10">
+    <section className="timeline-section bg-background py-10">
       <div className="mb-10 text-center">
         <ScrollHighlightTitle text={steps?.title} />
       </div>

@@ -26,6 +26,7 @@ export interface Service {
   hero: {
     title: string
     description: string
+    highlight?: string
   }
 
   services?: {

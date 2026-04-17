@@ -23,7 +23,7 @@ export function IntegrationsSection({ integrations }: Props) {
   const items = integrations?.items || []
 
   return (
-    <section className="py-20 px-6 bg-slate-50">
+    <section className="py-20 px-6 bg-background">
       <div className="mb-12 text-center">
         <ScrollHighlightTitle text={integrations?.title} />
         <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
@@ -38,7 +38,7 @@ export function IntegrationsSection({ integrations }: Props) {
             return (
               <div
                 key={i}
-                className="group border rounded-2xl bg-white p-6 text-center"
+                className="group border rounded-2xl bg-card p-6 text-center"
               >
                 <p className="text-sm font-semibold">{item}</p>
               </div>
@@ -48,31 +48,10 @@ export function IntegrationsSection({ integrations }: Props) {
           const Icon = item.icon ? icons[item.icon] : null
          
 
-        //   return (
-        //     <div
-        //       key={i}
-        //       className="group border rounded-2xl bg-white p-6 flex flex-col items-center justify-center text-center hover:shadow-md transition"
-        //     >
-        //       {Icon && (
-        //         <div className="mb-3 text-primary">
-        //           <Icon size={28} />
-        //         </div>
-        //       )}
-
-        //       <p className="text-sm font-semibold">{item.name}</p>
-
-        //       {item.desc && (
-        //         <p className="text-xs text-gray-500 mt-1">
-        //           {item.desc}
-        //         </p>
-        //       )}
-        //     </div>
-        //   )
-        // })}
         return (
             <Card
   key={i}
-  className="group flex gap-1.5 flex-col items-center text-center justify-center hover:shadow-lg transition-shadow duration-300 bg-white"
+  className="group flex gap-1.5 flex-col items-center text-center justify-center hover:shadow-lg transition-shadow duration-300 bg-card"
 >
   {Icon && (
     <CardHeader className="px-0 flex items-center justify-center">

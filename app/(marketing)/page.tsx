@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { ExpandableCards } from "@/components/ExpandableCards";
-import Footer from "@/components/Footer";
+import Footer from "@/layout/Footer";
 import FunFacts from "@/components/FunFacts";
 import GetInTouch from "@/components/GetInTouch";
 import IndustriesSectionMain from "@/components/IndustriesSectionMain";
@@ -86,13 +86,26 @@ export default function Page() {
       />
 
       {/* Page Components */}
-      <Hero />
+     <Hero
+  badge="Business & Financial Consulting"
+  title="Build, Scale & Optimize"
+  highlight="Your Business with Confidence"
+  description="From company formation to financial strategy and automation..."
+  primaryAction="Get Free Consultation"
+  secondaryAction="View Services"
+  stats={[
+    { value: "500+", label: "Businesses Supported" },
+    { value: "10+", label: "Industries Served" },
+    { value: "98%", label: "Client Satisfaction" },
+  ]}
+  isBottom={true}
+/>
       <Services />
       <IndustriesSectionMain />
       <IndustriesSection industries={industries} />
       <GrowConfidanceSection/>
       <GetInTouch />
-      <Footer />
+      
     </>
   );
 }

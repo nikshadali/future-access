@@ -1,13 +1,17 @@
 'use client';
-import Footer from '@/components/Footer'
+import Footer from '@/layout/Footer'
 import SocialProofSection from '@/components/services/SocialProofSection'
-import AnimatedButton from '@/components/ui/AnimatedButton'
+
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Particles } from '@/components/ui/particles'
 import ScrollHighlightTitle from '@/components/ui/ScrollHighlightTitle'
 import Script from 'next/script'
 import React from 'react'
+import { AnimatedGlow } from '@/components/AnimatedGlow';
+import CustomBadge from '@/components/CustomBadge';
+import { AnimatedButton } from '@/components/FinanceButton';
+import CTASection from '@/components/CTASection';
 
 const stats = [
   { label: "Projects Completed", value: "250+" },
@@ -58,7 +62,9 @@ const AboutPageClient = () => {
       {/* Hero Section */}
       <section className="relative py-32 px-6 text-center">
         <Particles className="absolute inset-0 z-0" quantity={100} ease={80} color="#000000" refresh />
-        <Badge>About us</Badge>
+      <AnimatedGlow/>
+      <CustomBadge title="About Us" />
+       
         <h1 className="mt-4 text-4xl md:text-6xl max-w-4xl mx-auto font-extrabold">
           We Build Modern Solutions for Growing Businesses
         </h1>
@@ -87,7 +93,7 @@ const AboutPageClient = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-32 px-6 bg-primary text-white text-center">
+      {/* <section className="py-32 px-6 bg-background text-white text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold">Our Mission</h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl">
           Empower businesses with modern technology, seamless processes, and data-driven solutions.
@@ -95,9 +101,17 @@ const AboutPageClient = () => {
         <div className="flex justify-center mt-10">
           <AnimatedButton label="Get in Touch" />
         </div>
-      </section>
+      </section> */}
 
-      <Footer />
+       <CTASection
+    title="Our Mission"
+    description=" Empower businesses with modern technology, seamless processes, and data-driven solutions."
+    primaryAction="Get in Touch"
+    secondaryAction="alk to an Expert"
+    trustPoints={["No commitment", "Confidential", "Trusted by growing businesses"]}
+  />
+
+      
     </div>
   )
 }

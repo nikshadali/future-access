@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import SmoothScroll from "./smooth-scroll";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/layout/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en"  suppressHydrationWarning>
-      <body
+      {/* <body
         
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
@@ -42,7 +43,33 @@ export default function RootLayout({
           <Navbar />
           <SmoothScroll>{children}</SmoothScroll>
         </ThemeProvider>
-      </body>
+      </body> */}
+
+      <body
+  className={`${inter.variable} ${poppins.variable} antialiased min-h-screen flex flex-col`}
+>
+  <ThemeProvider
+    attribute="class"
+    defaultTheme="system"
+    enableSystem
+    disableTransitionOnChange
+  >
+    <Navbar />
+
+    {/* MAIN CONTENT */}
+      <SmoothScroll>
+    <main className="flex-1">
+        {children}
+    </main>
+    <Footer />
+      </SmoothScroll>
+
+    {/* FOOTER */}
+    {/* 👇 Add here */}
+    {/* import Footer first */}
+    
+  </ThemeProvider>
+</body>
     </html>
   );
 }

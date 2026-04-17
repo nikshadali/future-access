@@ -7,7 +7,8 @@ export const services: Service[] = [
     category: "Business Growth",
 
     hero: {
-      title: "Start Your Business Legally Fast, Simple and Stress-Free",
+      title: "Start Your Business Legally Fast",
+      highlight: "Simple and Stress-Free",
       description:
         "We help entrepreneurs and investors launch companies quickly with full compliance.",
     },
@@ -125,7 +126,8 @@ export const services: Service[] = [
   category: "Business Growth",
 
   hero: {
-    title: "Validate Your Business Idea Before You Invest",
+    title: "Validate Your Business ",
+    highlight: "Idea Before You Invest",
     description:
       "Our feasibility studies help entrepreneurs evaluate the viability, risks, and profitability of their business ideas before launching.",
   },
@@ -265,7 +267,8 @@ faq: {
   category: "Business Growth",
 
   hero: {
-    title: "Reliable Staff Support to Help Your Business Scale",
+    title: "Reliable Staff Support to ",
+    highlight: "Help Your Business Scale",
     description:
       "We provide skilled professionals and operational support to help businesses manage workload, improve efficiency, and focus on growth.",
   },
@@ -410,7 +413,8 @@ faq: {
   category: "Finance",
 
   hero: {
-    title: "Strategic CFO Expertise Without the Full-Time Cost",
+    title: "Strategic CFO Expertise ",
+    highlight: "Without the Full-Time Cost",
     description:
       "Get experienced financial leadership to guide your business decisions, improve cash flow, and drive sustainable growth.",
   },
@@ -555,7 +559,8 @@ faq: {
     category: "Finance",
 
     hero: {
-      title: "Accurate Bookkeeping for Growing Businesses",
+      title: "Accurate Bookkeeping for ",
+      highlight: "Growing Businesses",
       description:
         "Keep your financial records organized and compliant.",
     },
@@ -620,7 +625,8 @@ faq: {
   category: "Finance",
 
   hero: {
-    title: "Professional Tax & VAT Services for Modern Businesses",
+    title: "Professional Tax & VAT ",
+    highlight: "Services for Modern Businesses",
     description:
       "Stay compliant with tax regulations while optimizing your financial operations with expert VAT and taxation support.",
   },
@@ -767,7 +773,8 @@ faq: {
   category: "Technology",
 
   hero: {
-    title: "Automate Customer Conversations with WhatsApp",
+    title: "Automate Customer ",
+    highlight: "Conversations with WhatsApp",
     description:
       "Engage, convert, and support customers 24/7 using intelligent WhatsApp automation and chatbot solutions.",
   },
@@ -998,7 +1005,8 @@ faq: {
   category: "Technology",
 
   hero: {
-    title: "Automate Conversations with Intelligent AI Chatbots",
+    title: "Automate Conversations with ",
+    highlight: "Intelligent AI Chatbots",
     description:
       "Deliver instant, personalized, and scalable customer interactions using AI-powered chatbot solutions across multiple platforms.",
   },
