@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import AnimatedButton from "./ui/AnimatedButton";
 import Link from "next/link";
+import { BlackAnimatedButton } from "./FinanceButton";
 
 interface ServiceTab {
   label: string;
@@ -116,7 +117,7 @@ export default function ServiceList({
 
           <div className="mt-6">
             <Link href="/services"  >
-            <AnimatedButton label="Read More" />
+            <BlackAnimatedButton label="Read More" />
             </Link>
           </div>
         </div>
