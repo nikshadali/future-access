@@ -92,8 +92,8 @@ export function BlackAnimatedButton({
       </span>
 
       {/* Icon Wrapper */}
-      <span className="relative z-10 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-primary transition-all duration-500 group-hover:bg-primary group-hover:text-background">
-        <ArrowUpRight className="h-3 w-3 text-[#010101] hover:text-white transition-transform duration-500 group-hover:rotate-45" />
+      <span className="relative z-10 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-white transition-all duration-500 group-hover:bg-[#010101] group-hover:text-white">
+        <ArrowUpRight className="h-3 w-3  transition-transform duration-500 group-hover:rotate-45" />
       </span>
     </button>
   );
