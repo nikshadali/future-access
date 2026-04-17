@@ -16,9 +16,9 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: 5000, suffix: "+", label: "Active Merchants" },
-  { value: 99.9, suffix: "%", label: "Uptime Guarantee" },
-  { value: 15, suffix: "+", label: "Payment Methods" },
+  { value: 500, suffix: "+", label: "Businesses Supported" },
+  { value: 10, suffix: "+", label: "Industries Served" },
+  { value: 98, suffix: "%", label: "Client Satisfaction" },
 ];
 
 function easeOutQuart(t: number) {
