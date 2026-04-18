@@ -107,14 +107,27 @@ useEffect(() => {
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-primary tracking-tight">
-         <Image 
-         src="/future-axis-logo.png"
-          alt="Logo" 
-          width={200} 
-          height={60} 
-          priority
-           />
-        </Link>
+       
+  <>
+    <Image
+      src='/light-future-logo.png'
+      alt="Logo"
+      width={160}
+      height={60}
+      className="block dark:hidden"
+      priority
+    />
+    <Image
+      src='/future-axis-logo.png'
+      alt="Logo"
+      width={200}
+      height={60}
+      className="hidden dark:block"
+      priority
+    />
+  </>
+</Link>
+        
 
         {/* Desktop Menu */}
        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-foreground">
