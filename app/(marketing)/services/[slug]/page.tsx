@@ -45,17 +45,17 @@ export default async function ServicePage({ params }: Props) {
       {service.sections.includes("process") && service.steps && (
         <ProcessSection steps={service.steps} />
       )}
-      {service.sections.includes("techStack") && (
+      {/* {service.sections.includes("techStack") && (
         <TechStackSection techStack={service.techStack} />
-      )}
+      )} */}
 
       {service.sections.includes("features") && service.features && (
         <FeaturesSection features={service.features} />
       )}
 
-      {service.sections.includes("industries") && service.industries && (
+      {/* {service.sections.includes("industries") && service.industries && (
         <IndustriesSection industries={service.industries} />
-      )}
+      )} */}
 
       {service.sections.includes("testimonials") && <TestimonialsSection />}
 
