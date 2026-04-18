@@ -6,21 +6,9 @@ import { Mail, Linkedin, Twitter, Github } from "lucide-react";
 import Image from "next/image";
 import { AnimatedGlow } from "../components/AnimatedGlow";
 
-export default function Footer(): React.JSX.Element {
+export default function DarkFooter(): React.JSX.Element {
   return (
-    // <footer className=" 
-    // bg-background 
-    // text-foreground 
-    // relative overflow-hidden">
-     <footer
-      className="
-        relative overflow-hidden
-        text-white
-        border-t border-white/10
-       bg-[linear-gradient(180deg,#031521_0%,#020b12_100%)]
-    dark:bg-none dark:bg-background
-      "
-    >
+    <footer className=" bg-background text-foreground relative overflow-hidden">
       <AnimatedGlow/>
       {/* Top Accent Line */}
       <div className="absolute top-0 left-0 w-full h-0.5 bg-primary" />
@@ -33,7 +21,7 @@ export default function Footer(): React.JSX.Element {
             YourCompany<span className="text-[#0196f4]">.</span>
           </h2> */}
           <Image src="/future-axis-logo.png" alt="Logo" width={200} height={100} />
-          <p className="text-white/60 leading-relaxed">
+          <p className="text-foreground/60 leading-relaxed">
             Empowering industries with AI-powered ERP, accounting,
             and intelligent digital transformation solutions.
           </p>
@@ -90,7 +78,7 @@ export default function Footer(): React.JSX.Element {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10 py-6 text-center text-white/50 text-sm">
+      <div className="border-t border-white/10 py-6 text-center text-foreground/50 text-sm">
         © {new Date().getFullYear()} futureaxis. All rights reserved.
       </div>
     </footer>
@@ -114,7 +102,7 @@ function FooterColumn({
           <li key={i}>
             <Link
               href="#"
-              className="text-text/60 hover:text-[#0196f4] transition duration-300"
+              className="text-foreground/60 hover:text-[#0196f4] transition duration-300"
             >
               {link}
             </Link>

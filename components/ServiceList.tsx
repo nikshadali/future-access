@@ -77,7 +77,7 @@ export default function ServiceList({
                 ${
                   isActive
                     ? "bg-primary text-foreground"
-                    : "text-foreground  hover:bg-primary/80"
+                    : "text-white  hover:bg-primary/80"
                 }
               `}
             >
@@ -94,13 +94,13 @@ export default function ServiceList({
           
           <div>
             {activeTab.icon && (
-              <div className="text-foreground text-[80px] mb-4">
+              <div className="text-white text-[80px] mb-4">
                 {activeTab.icon}
               </div>
             )}
 
-            <p className="text-foreground/60 leading-relaxed text-[18px]">
-              <span className="font-semibold text-foreground">
+            <p className="text-white/60 leading-relaxed text-[18px]">
+              <span className="font-semibold text-white">
                 {activeTab.heading}
               </span>{" "}
               {activeTab.description}

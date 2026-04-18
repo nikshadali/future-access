@@ -102,7 +102,7 @@ useEffect(() => {
   return (
     <header
       ref={navRef}
-      className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-border"
+      className="fixed top-0 left-0 w-full z-50  bg-background/80 backdrop-blur-xl border-b border-border"
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-6">
         {/* Logo */}

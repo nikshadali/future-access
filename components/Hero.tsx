@@ -274,7 +274,7 @@ export default function Hero({
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(0,0,0,0.5))]" />
       </div>
 
-      <div className="mx-auto max-w-6xl py-12 sm:py-16 lg:py-24 px-6 md:px-[8%] text-center">
+      <div className="mx-auto max-w-6xl py-12 sm:py-16 lg:py-24 pt-32 px-6 md:px-[8%] text-center">
         {/* Badge */}
         {badge && (
           <motion.div

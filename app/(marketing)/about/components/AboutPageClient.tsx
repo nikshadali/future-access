@@ -1,5 +1,5 @@
 'use client';
-import Footer from '@/layout/Footer'
+import Footer from '@/layout/LightFooter'
 import SocialProofSection from '@/components/services/SocialProofSection'
 
 import { Badge } from '@/components/ui/badge';

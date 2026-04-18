@@ -47,7 +47,8 @@
   --radius-4xl: calc(var(--radius) + 16px);
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
- 
+  --color-footer-background:var(--footer-background);
+  --color-footer-foreground:var(--footer-foreground);
   --spacing-xs: var(--space-xs);
   --spacing-sm: var(--space-sm);
   --spacing-md: var(--space-md);
@@ -89,6 +90,9 @@
   --accent: #0a7cca;
   --accent-foreground: #ffffff;
   --accent-color: #0a7cca;
+
+  --footer-background: linear-gradient(180deg,#031521_0%,#020b12_100%);
+  --footer-foreground: #ffffff;
 
   --text-highlight-active: var(--foreground);
   --text-highlight-base: #9ca3af; /* gray-400 */
@@ -134,7 +138,8 @@
    --shadow-primary: 30 145 202; 
    --glow-primary: 30 145 202;
   --glow-accent: 58 167 222;
-  
+   --background-footer: #010101;
+  --footer-foreground: #f1f1f1;
 
 }
 .img-slider-single::after {

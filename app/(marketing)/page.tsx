@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { ExpandableCards } from "@/components/ExpandableCards";
-import Footer from "@/layout/Footer";
+import Footer from "@/layout/LightFooter";
 import FunFacts from "@/components/FunFacts";
 import GetInTouch from "@/components/GetInTouch";
 import IndustriesSectionMain from "@/components/IndustriesSectionMain";
