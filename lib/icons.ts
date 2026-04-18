@@ -37,6 +37,19 @@ import {
   Globe,
   Share2,
   Brain,
+  LayoutDashboard,
+  Monitor,
+  CreditCard,
+  Palette,
+  Code2,
+  Activity,
+  Bug,
+  Gauge,
+  RefreshCw,
+  Cloud,
+  AlertCircle,
+  Shield,
+  ArrowUpCircle
 } from "lucide-react"
 
 export const icons = {
@@ -77,8 +90,20 @@ MessageSquare,
 Slack,
   Globe,
   Share2,
-  Brain
-
+  Brain,
+LayoutDashboard,
+Monitor,
+CreditCard,
+Palette,
+Code2,
+Activity,
+Bug,
+Gauge,
+RefreshCw,
+Cloud,
+AlertCircle,
+Shield,
+ArrowUpCircle
   
 }
 

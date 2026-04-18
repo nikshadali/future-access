@@ -88,7 +88,7 @@ export default function ServicesPage() {
     },
     {
       title: "Web Development",
-      slug: "web-development",
+      slug: "website-development",
       description:
         "Modern, scalable websites and applications designed for performance and growth.",
       icon: Globe,

@@ -9,6 +9,7 @@ export const services: Service[] = [
     hero: {
       title: "Start Your Business Legally Fast",
       highlight: "Simple and Stress-Free",
+      badge: "Business Growth Solutions",
       description:
         "We help entrepreneurs and investors launch companies quickly with full compliance.",
     },
@@ -128,6 +129,7 @@ export const services: Service[] = [
   hero: {
     title: "Validate Your Business ",
     highlight: "Idea Before You Invest",
+    badge: "Business Planning & Research",
     description:
       "Our feasibility studies help entrepreneurs evaluate the viability, risks, and profitability of their business ideas before launching.",
   },
@@ -269,6 +271,7 @@ faq: {
   hero: {
     title: "Reliable Staff Support to ",
     highlight: "Help Your Business Scale",
+    badge: "Workforce & Operations Support",
     description:
       "We provide skilled professionals and operational support to help businesses manage workload, improve efficiency, and focus on growth.",
   },
@@ -415,6 +418,7 @@ faq: {
   hero: {
     title: "Strategic CFO Expertise ",
     highlight: "Without the Full-Time Cost",
+     badge: "Financial Management Services",
     description:
       "Get experienced financial leadership to guide your business decisions, improve cash flow, and drive sustainable growth.",
   },
@@ -561,6 +565,7 @@ faq: {
     hero: {
       title: "Accurate Bookkeeping for ",
       highlight: "Growing Businesses",
+      badge: "Strategic Financial Advisory",
       description:
         "Keep your financial records organized and compliant.",
     },
@@ -627,6 +632,7 @@ faq: {
   hero: {
     title: "Professional Tax & VAT ",
     highlight: "Services for Modern Businesses",
+    badge: "Tax & Compliance Services",
     description:
       "Stay compliant with tax regulations while optimizing your financial operations with expert VAT and taxation support.",
   },
@@ -775,6 +781,7 @@ faq: {
   hero: {
     title: "Automate Customer ",
     highlight: "Conversations with WhatsApp",
+    badge: "Business Automation Solutions",
     description:
       "Engage, convert, and support customers 24/7 using intelligent WhatsApp automation and chatbot solutions.",
   },
@@ -1007,6 +1014,7 @@ faq: {
   hero: {
     title: "Automate Conversations with ",
     highlight: "Intelligent AI Chatbots",
+    badge: "AI & Customer Engagement",
     description:
       "Deliver instant, personalized, and scalable customer interactions using AI-powered chatbot solutions across multiple platforms.",
   },
@@ -1196,5 +1204,473 @@ faq: {
     "faq",
     "cta",
   ],
+},
+
+{
+  slug: "website-development",
+  title: "Website Development",
+  category: "Technology",
+
+  hero: {
+    title: "Custom Websites Built to ",
+    highlight: "Grow Your Business Online",
+    badge: "Website & Digital Solutions",
+    description:
+      "We design and develop high-performing websites that help businesses attract customers, build trust, and increase conversions.",
+  },
+
+  services: {
+    title: "End-to-End Website Development Services",
+    description:
+      "From strategy and UI design to development and optimization, we create websites tailored to your business goals and customer needs.",
+    servicesCard: [
+      {
+        title: "Business Website Development",
+        description:
+          "Professional websites designed to showcase your brand, services, and business credibility.",
+        icon: "Globe",
+      },
+      {
+        title: "E-commerce Development",
+        description:
+          "Scalable online stores with secure payments, product management, and seamless shopping experiences.",
+        icon: "ShoppingCart",
+      },
+      {
+        title: "Custom Web Applications",
+        description:
+          "Tailored web platforms and portals built around your unique business workflows.",
+        icon: "Code2",
+      },
+      {
+        title: "UI/UX Design",
+        description:
+          "Modern and intuitive user interfaces that improve engagement and conversions.",
+        icon: "Palette",
+      },
+      {
+        title: "CMS Development",
+        description:
+          "Easy-to-manage websites powered by CMS platforms for content updates and flexibility.",
+        icon: "FileText",
+      },
+      {
+        title: "Website Maintenance & Support",
+        description:
+          "Ongoing support, updates, security monitoring, and performance improvements.",
+        icon: "ShieldCheck",
+      },
+    ],
+  },
+
+  techStack: {
+    title: "Technologies We Use",
+    stack: [
+      { name: "React", icon: "Code2" },
+      { name: "Next.js", icon: "Globe" },
+      { name: "Node.js", icon: "Server" },
+      { name: "TypeScript", icon: "FileCode" },
+      { name: "Tailwind CSS", icon: "Palette" },
+      { name: "MongoDB", icon: "Database" },
+    ],
+  },
+
+  integrations: {
+    title: "Integrations",
+    items: [
+      {
+        name: "Stripe",
+        icon: "CreditCard",
+        desc: "Secure online payment integration",
+      },
+      {
+        name: "Shopify",
+        icon: "ShoppingCart",
+      },
+      {
+        name: "HubSpot",
+        icon: "Database",
+      },
+      {
+        name: "Google Analytics",
+        icon: "BarChart3",
+      },
+      {
+        name: "Zapier",
+        icon: "Workflow",
+      },
+      {
+        name: "Custom APIs",
+        icon: "Webhook",
+      },
+    ],
+  },
+
+  useCases: {
+    title: "Website Solutions We Build",
+    cases: [
+      {
+        title: "Corporate Websites",
+        desc: "Professional websites that establish trust and communicate your services clearly.",
+        icon: "Building2",
+      },
+      {
+        title: "E-commerce Stores",
+        desc: "Online stores with product catalogs, payment gateways, and order management.",
+        icon: "ShoppingBag",
+      },
+      {
+        title: "Landing Pages",
+        desc: "High-converting landing pages designed for campaigns, lead generation, and product launches.",
+        icon: "Monitor",
+      },
+      {
+        title: "Booking Platforms",
+        desc: "Appointment and booking systems for service-based businesses.",
+        icon: "Calendar",
+      },
+      {
+        title: "Membership Portals",
+        desc: "Secure portals with user accounts, subscriptions, and gated content.",
+        icon: "Users",
+      },
+      {
+        title: "Custom Dashboards",
+        desc: "Interactive dashboards and admin panels to manage business operations efficiently.",
+        icon: "LayoutDashboard",
+      },
+    ],
+  },
+
+  steps: {
+    title: "Our Website Development Process",
+    stepsArr: [
+      {
+        color: "#0D6EFD",
+        icon: "Users",
+        title: "Discovery & Planning",
+        desc: "Understand your business goals, audience, and website requirements.",
+      },
+      {
+        color: "#6710F5",
+        icon: "Palette",
+        title: "UI/UX Design",
+        desc: "Create modern layouts, wireframes, and user-friendly designs.",
+      },
+      {
+        color: "#6F42C1",
+        icon: "Code2",
+        title: "Development & Integration",
+        desc: "Build the website, integrate tools, and ensure responsiveness across devices.",
+      },
+      {
+        color: "#D63384",
+        icon: "Rocket",
+        title: "Launch & Optimization",
+        desc: "Deploy the website, monitor performance, and optimize for growth.",
+      },
+    ],
+  },
+
+  features: {
+    title: "Why Businesses Choose Our Website Development Services",
+    featuresArr: [
+      "Custom websites tailored to your business goals",
+      "Responsive design for mobile, tablet, and desktop",
+      "SEO-friendly structure and fast loading speeds",
+      "Scalable solutions built with modern technologies",
+      "Secure and reliable website architecture",
+      "Ongoing support and maintenance after launch",
+    ],
+  },
+
+  industries: {
+    title: "Industries We Serve",
+    industriesArr: [
+      "E-commerce",
+      "Technology",
+      "Healthcare",
+      "Real Estate",
+      "Education",
+      "Professional Services",
+    ],
+  },
+
+  faq: {
+    title: "Frequently Asked Questions",
+    faqs: [
+      {
+        question: "How long does it take to build a website?",
+        answer:
+          "The timeline depends on the complexity of the project, but most business websites are completed within 2–6 weeks.",
+      },
+      {
+        question: "Will my website work on mobile devices?",
+        answer:
+          "Yes. All websites are fully responsive and optimized for mobile, tablet, and desktop devices.",
+      },
+      {
+        question: "Can you redesign my existing website?",
+        answer:
+          "Yes. We can redesign outdated websites to improve performance, user experience, and conversions.",
+      },
+      {
+        question: "Do you provide ongoing website support?",
+        answer:
+          "Yes. We offer ongoing maintenance, updates, security monitoring, and technical support.",
+      },
+    ],
+  },
+
+  sections: [
+    "hero",
+    "socialProof",
+    "services",
+    "techStack",
+    "useCases",
+    "integrations",
+    "process",
+    "features",
+    "industries",
+    "testimonials",
+    "faq",
+    "cta",
+  ],
+},
+
+{
+  slug: "application-support-services",
+  title: "Application Support Services",
+  category: "Technology",
+
+  hero: {
+    title: "Reliable Application Support to ",
+    highlight: "Keep Your Business Running Smoothly",
+    badge: "Application Maintenance & Support",
+    description:
+      "We provide ongoing application support, maintenance, and technical assistance to ensure your systems stay secure, stable, and high-performing.",
+  },
+
+  services: {
+    title: "Comprehensive Application Support Solutions",
+    description:
+      "Our support services help businesses maintain, optimize, and troubleshoot applications so teams can focus on operations without technical disruptions.",
+    servicesCard: [
+      {
+        title: "Application Monitoring",
+        description:
+          "Continuous monitoring to identify issues, downtime risks, and performance bottlenecks before they affect users.",
+        icon: "Activity",
+      },
+      {
+        title: "Bug Fixes & Issue Resolution",
+        description:
+          "Quick diagnosis and resolution of technical issues, bugs, and application errors.",
+        icon: "Bug",
+      },
+      {
+        title: "Performance Optimization",
+        description:
+          "Improve speed, reliability, and overall application performance for a better user experience.",
+        icon: "Gauge",
+      },
+      {
+        title: "Security Updates",
+        description:
+          "Apply patches, updates, and security improvements to protect your applications.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Version Upgrades",
+        description:
+          "Keep your applications up to date with the latest frameworks, libraries, and platform versions.",
+        icon: "RefreshCw",
+      },
+      {
+        title: "Technical Support",
+        description:
+          "Dedicated support for troubleshooting, user issues, and ongoing technical guidance.",
+        icon: "Headset",
+      },
+    ],
+  },
+
+  techStack: {
+    title: "Technologies We Support",
+    stack: [
+      { name: "React", icon: "Code2" },
+      { name: "Next.js", icon: "Globe" },
+      { name: "Node.js", icon: "Server" },
+      { name: "TypeScript", icon: "FileCode" },
+      { name: "MongoDB", icon: "Database" },
+      { name: "AWS", icon: "Cloud" },
+    ],
+  },
+
+  integrations: {
+    title: "Support Areas",
+    items: [
+      {
+        name: "CRM Systems",
+        icon: "Database",
+        desc: "Support for customer relationship management platforms",
+      },
+      {
+        name: "ERP Platforms",
+        icon: "Briefcase",
+      },
+      {
+        name: "Payment Gateways",
+        icon: "CreditCard",
+      },
+      {
+        name: "Cloud Services",
+        icon: "Cloud",
+      },
+      {
+        name: "Third-Party APIs",
+        icon: "Webhook",
+      },
+      {
+        name: "Custom Applications",
+        icon: "Code2",
+      },
+    ],
+  },
+
+  useCases: {
+    title: "Common Application Support Use Cases",
+    cases: [
+      {
+        title: "Production Issue Resolution",
+        desc: "Identify and resolve application issues quickly to minimize downtime.",
+        icon: "AlertCircle",
+      },
+      {
+        title: "Application Maintenance",
+        desc: "Perform routine updates, bug fixes, and system improvements.",
+        icon: "Settings",
+      },
+      {
+        title: "Performance Monitoring",
+        desc: "Track application performance and optimize system efficiency.",
+        icon: "BarChart3",
+      },
+      {
+        title: "User Support",
+        desc: "Assist users with troubleshooting, access issues, and technical questions.",
+        icon: "Users",
+      },
+      {
+        title: "Security Management",
+        desc: "Apply security patches and monitor vulnerabilities to reduce risks.",
+        icon: "Shield",
+      },
+      {
+        title: "System Upgrades",
+        desc: "Upgrade applications and dependencies without disrupting business operations.",
+        icon: "ArrowUpCircle",
+      },
+    ],
+  },
+
+  steps: {
+    title: "Our Application Support Process",
+    stepsArr: [
+      {
+        color: "#0D6EFD",
+        icon: "Search",
+        title: "Assessment & Audit",
+        desc: "Review your current applications, infrastructure, and support needs.",
+      },
+      {
+        color: "#6710F5",
+        icon: "ClipboardCheck",
+        title: "Support Planning",
+        desc: "Define support scope, response times, and maintenance priorities.",
+      },
+      {
+        color: "#6F42C1",
+        icon: "Settings",
+        title: "Monitoring & Maintenance",
+        desc: "Continuously monitor, update, and optimize your applications.",
+      },
+      {
+        color: "#D63384",
+        icon: "Headset",
+        title: "Ongoing Support",
+        desc: "Provide dedicated technical support and issue resolution whenever needed.",
+      },
+    ],
+  },
+
+  features: {
+    title: "Why Businesses Choose Our Support Services",
+    featuresArr: [
+      "Fast issue resolution and reduced downtime",
+      "Continuous monitoring and proactive maintenance",
+      "Improved application security and reliability",
+      "Scalable support for growing businesses",
+      "Access to experienced technical specialists",
+      "Dedicated support for critical business applications",
+    ],
+  },
+
+  industries: {
+    title: "Industries We Support",
+    industriesArr: [
+      "Technology",
+      "Healthcare",
+      "Finance",
+      "E-commerce",
+      "Education",
+      "Professional Services",
+    ],
+  },
+
+  faq: {
+    title: "Frequently Asked Questions",
+    faqs: [
+      {
+        question: "What are application support services?",
+        answer:
+          "Application support services include monitoring, troubleshooting, maintenance, updates, and technical support for business applications.",
+      },
+      {
+        question: "Do you provide support for custom-built applications?",
+        answer:
+          "Yes. We provide support for both custom-built applications and third-party software platforms.",
+      },
+      {
+        question: "Can you support cloud-based applications?",
+        answer:
+          "Yes. We support cloud-hosted applications, APIs, and related infrastructure.",
+      },
+      {
+        question: "How quickly can issues be resolved?",
+        answer:
+          "Resolution times depend on issue severity, but critical issues are prioritized for immediate response.",
+      },
+    ],
+  },
+
+  sections: [
+    "hero",
+    "socialProof",
+    "services",
+    "techStack",
+    "useCases",
+    "integrations",
+    "process",
+    "features",
+    "industries",
+    "testimonials",
+    "faq",
+    "cta",
+  ],
 }
+
+
+
+
 ]

@@ -365,7 +365,7 @@ export default function Hero({
         >
           <div className="relative mx-auto max-w-4xl rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-xl">
             <div className="space-y-4">
-              <div className="h-4 w-32 rounded bg-foreground/10" />
+              <div className="h-4 w-32 rounded bg-foreground/10" ></div>
               <div className="h-4 w-48 rounded bg-foreground/10" />
 
               <div className="mt-6 grid grid-cols-2 gap-4">
@@ -379,7 +379,9 @@ export default function Hero({
                 </div>
               </div>
 
-              <div className="mt-4 h-24 rounded-xl bg-foreground/10" />
+              <div className="mt-4 h-24 flex items-center justify-center rounded-xl bg-foreground/10 text-foreground/70 text-sm" >
+              Helping startups and businesses improve operations, finances, and automation.
+              </div>
             </div>
           </div>
         </motion.div>

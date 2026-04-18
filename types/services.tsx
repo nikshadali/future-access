@@ -27,6 +27,7 @@ export interface Service {
     title: string
     description: string
     highlight?: string
+    badge?: string
   }
 
   services?: {

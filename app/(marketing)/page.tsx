@@ -61,8 +61,8 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Your Brand",
-    url: "https://bftconsultants.com/",
-    logo: "https://bftconsultants.com/logo.png",
+    url: "https://futureaxis.com/",
+    logo: "https://futureaxis.com/logo.png",
     sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",

@@ -1,19 +1,12 @@
-'use client';
-import Footer from '@/layout/LightFooter'
-import SocialProofSection from '@/components/services/SocialProofSection'
+"use client";
 
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Particles } from '@/components/ui/particles'
-import ScrollHighlightTitle from '@/components/ui/ScrollHighlightTitle'
-import Script from 'next/script'
-import React from 'react'
-import { AnimatedGlow } from '@/components/AnimatedGlow';
-import CustomBadge from '@/components/CustomBadge';
-import { AnimatedButton } from '@/components/FinanceButton';
-import CTASection from '@/components/CTASection';
-import Hero from '@/components/Hero';
-import { Section } from '@/layout/Section';
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import ScrollHighlightTitle from "@/components/ui/ScrollHighlightTitle";
+import Script from "next/script";
+import CTASection from "@/components/CTASection";
+import Hero from "@/components/Hero";
+import { Section } from "@/layout/Section";
 
 const stats = [
   { label: "Projects Completed", value: "250+" },
@@ -22,9 +15,15 @@ const stats = [
 ];
 
 const values = [
-  { title: "Innovation", desc: "We embrace cutting-edge technology and creative solutions." },
+  {
+    title: "Innovation",
+    desc: "We embrace cutting-edge technology and creative solutions.",
+  },
   { title: "Integrity", desc: "Transparency and honesty are at our core." },
-  { title: "Excellence", desc: "Delivering best-in-class results is our standard." },
+  {
+    title: "Excellence",
+    desc: "Delivering best-in-class results is our standard.",
+  },
 ];
 
 const team = [
@@ -34,12 +33,12 @@ const team = [
 ];
 
 const AboutPageClient = () => {
-    const schema = {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Your Brand",
-    url: "https://bftconsultants.com/",
-    logo: "https://bftconsultants.com/logo.png",
+    url: "https://futureaxis.com/",
+    logo: "https://futureaxis.com/logo.png",
     sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",
@@ -53,7 +52,7 @@ const AboutPageClient = () => {
     ],
   };
   return (
-   <div>
+    <div>
       {/* JSON-LD Structured Data */}
       <Script
         id="organization-schema"
@@ -62,26 +61,24 @@ const AboutPageClient = () => {
       />
 
       {/* Hero Section */}
-     
-        <Hero
-          badge="About Us"
-          title="We Build Modern Solutions for "
-          highlight="Growing Businesses"
-          description="From startups to enterprises, we deliver technology and business solutions that scale and innovate."
-          primaryAction="Get Free Consultation"
-          secondaryAction="View Services"
-          stats={[
-            { value: "500+", label: "Businesses Supported" },
-            { value: "10+", label: "Industries Served" },
-            { value: "98%", label: "Client Satisfaction" },
-          ]}
-          
-        />
+
+      <Hero
+        badge="About Us"
+        title="We Build Modern Solutions for "
+        highlight="Growing Businesses"
+        description="From startups to enterprises, we deliver technology and business solutions that scale and innovate."
+        primaryAction="Get Free Consultation"
+        secondaryAction="View Services"
+        stats={[
+          { value: "500+", label: "Businesses Supported" },
+          { value: "10+", label: "Industries Served" },
+          { value: "98%", label: "Client Satisfaction" },
+        ]}
+      />
       {/* Stats Section */}
-     
 
       {/* Our Values */}
-      <Section >
+      <Section>
         <ScrollHighlightTitle text="Our Core Values" />
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           {values.map((value, i) => (
@@ -96,17 +93,19 @@ const AboutPageClient = () => {
         </div>
       </Section>
 
-       <CTASection
-    title="Our Mission"
-    description=" Empower businesses with modern technology, seamless processes, and data-driven solutions."
-    primaryAction="Get in Touch"
-    secondaryAction="alk to an Expert"
-    trustPoints={["No commitment", "Confidential", "Trusted by growing businesses"]}
-  />
-
-      
+      <CTASection
+        title="Our Mission"
+        description=" Empower businesses with modern technology, seamless processes, and data-driven solutions."
+        primaryAction="Get in Touch"
+        secondaryAction="alk to an Expert"
+        trustPoints={[
+          "No commitment",
+          "Confidential",
+          "Trusted by growing businesses",
+        ]}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default AboutPageClient
+export default AboutPageClient;

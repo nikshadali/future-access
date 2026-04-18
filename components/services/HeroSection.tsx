@@ -60,7 +60,7 @@ export default function HeroSection({ service }: { service: Service }) {
     //   </section>
 
        <Hero
-        badge="Business & Financial Consulting"
+        badge={service.hero.badge}
         title= {service.hero.title}
         highlight={service.hero.highlight}
         description={service.hero.description}

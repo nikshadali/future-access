@@ -106,17 +106,17 @@ export default function GetInTouch() {
               <ContactItem
                 icon={<Mail size={20} />}
                 name="Email"
-                text="contact@bftconsultants.com"
+                text="contact@futureaxis.ae"
               />
               <ContactItem
                 icon={<Phone size={20} />}
                 name="Phone"
-                text="+971-503013473"
+                text="+971541806929"
               />
               <ContactItem
                 icon={<MapPin size={20} />}
                 name="Address"
-                text="Business Center, SHAMS freezone, UAE"
+                text="Shams Free Zone, Sharjah, UAE"
               />
             </div>
           </div>
