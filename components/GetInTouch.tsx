@@ -200,7 +200,7 @@ function ContactItem({
     <Card className="group border border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-lg">
       <CardContent className="flex items-center gap-4 px-5 py-2">
         {/* Icon */}
-        <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-background text-foreground group-hover:bg-foreground group-hover:text-background transition-all duration-300">
+        <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-primary text-foreground group-hover:bg-foreground group-hover:text-background transition-all duration-300">
           {icon}
         </div>
 
