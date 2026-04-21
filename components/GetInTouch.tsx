@@ -108,11 +108,11 @@ export default function GetInTouch() {
                 name="Email"
                 text="contact@futureaxis.ae"
               />
-              <ContactItem
+              {/* <ContactItem
                 icon={<Phone size={20} />}
                 name="Phone"
                 text="+971541806929"
-              />
+              /> */}
               <ContactItem
                 icon={<MapPin size={20} />}
                 name="Address"

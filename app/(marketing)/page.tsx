@@ -103,6 +103,7 @@ export default function Page() {
       <Services />
       <IndustriesSectionMain />
       {/* <IndustriesSection industries={industries} /> */}
+      
       <GrowConfidanceSection/>
       <GetInTouch />
       
