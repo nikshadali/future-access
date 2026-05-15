@@ -4,8 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { Menu, X } from "lucide-react"
 import { gsap } from "gsap"
 import Link from "next/link"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import Image from "next/image"
 import { AnimatedThemeToggler } from "./ui/animated-theme-toggler"
 
@@ -134,12 +133,16 @@ useEffect(() => {
   <Link className="hover:text-accent transition-colors" href="/services">Services</Link>
   <Link className="hover:text-accent transition-colors" href="/about">About</Link>
   <Link className="hover:text-accent transition-colors" href="/contact">Contact</Link>
+  <Link className="hover:text-accent transition-colors" href="/referral">Referral</Link>
+  <Link className="hover:text-accent transition-colors" href="/login">Login</Link>
 </nav>
 
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           <AnimatedThemeToggler />
-          <Button>Get Started</Button>
+          <Link href="/dashboard" className={buttonVariants()}>
+            Dashboard
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -168,8 +171,12 @@ useEffect(() => {
           <Link href="/services">Services</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/referral">Referral</Link>
+          <Link href="/login">Login</Link>
           
-          <Button className="mt-4 w-full">Get Started</Button>
+          <Link href="/dashboard" className={buttonVariants({ className: "mt-4 w-full" })}>
+            Dashboard
+          </Link>
         </div>
       </div>
     </header>
